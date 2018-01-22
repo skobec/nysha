@@ -1,0 +1,19 @@
+{
+  "name": "nysha",
+  "authors": [
+    "Roman Skobtsov"
+  ],
+  "description": "nysha",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "v4.0.0-beta"
+  }
+}
