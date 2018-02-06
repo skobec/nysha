@@ -128,6 +128,50 @@ h1, h2, h3, h4 {
 }
 
 
+#return-to-top {
+    position: fixed;
+    top: 55%;
+    background: url('../img/arrow-bottom.png')no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: inline-block;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+.btn-scroll {
+    position: absolute;
+    right: 60px;
+    z-index: 10
+}
+
 
 .homepage-hero-module {
     border-right: none;
@@ -143,7 +187,7 @@ h1, h2, h3, h4 {
     display: block !important;
 }
 .top-logo-bl {
-    margin-bottom: 60%;
+    margin-bottom: 100%;
 }
 .content {
     // position: absolute;
@@ -168,25 +212,12 @@ h1, h2, h3, h4 {
         max-width: 400px;
         padding-right: 35px;
         padding-left: 35px;
-        &:after {
-            content: "";
-            position: absolute;
-            width: 91%;
-            height: 95%;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            border: 2px solid #ffffff26;
-            pointer-events: none;
-        }
     }
 }
 .bottom-link {
     position: relative;
     bottom: 0;
-    margin-bottom: 10%;
+    margin-bottom: 17%;
 
 }
 .logo-img {
@@ -232,7 +263,7 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
     color: #ffffff;
     display: flex;
-    margin: 1rem 0 1rem;
+    margin: 0.5rem 0;
     &:after {
         content: "";
         width: 100%;
@@ -276,12 +307,14 @@ h1, h2, h3, h4 {
         max-width: 650px;
     }
     html,body {
-        height: 100%;
         min-height: 100%;
     }
 }
 
 @media screen and (max-width:650px) {
+    .video {
+        height: auto;
+    }
     .title {
         font-size: 40px;
         &:before,&:after {
@@ -303,7 +336,7 @@ h1, h2, h3, h4 {
         }
     }
     .top-logo-bl {
-        margin-bottom: 51%;
+        margin-bottom: 85%;
     }
 }
 @media screen and (max-width:500px) {
@@ -329,7 +362,7 @@ h1, h2, h3, h4 {
 }
 @media screen and (max-width: 250px) {
     html,body {
-        height: 100%;
+        // height: 100%;
         min-height: 100%;
     }
     .content {
